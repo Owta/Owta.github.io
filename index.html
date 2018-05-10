@@ -1,68 +1,89 @@
 <!DOCTYPE html>
-<html>
- <title>Welcome Home</title>
-<link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon" />
 <head>
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+                                            <!-- author -->
+<meta name="author" content="Chloe">
+                                            <!-- page title -->
+<title>Salutations</title>
+                                            <!-- favicon -->
+<link rel="shortcut icon" href="img/favi.png" type="image/ico">
+                                            <!-- css -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+                                            <!-- js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+                                        <!-- responsive  -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+                                          <!-- fonts -->
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 </head>
-
 <body>
-   
-    <div class="card horizontal blue-grey darken-3">
-        <div class="card-image">
-            
-        <!--Your waifu here-->
-        <img src="welcome.png">
-            
-        </div>
-        <div class="card-stacked">
-            <div class="card-content">
-            <h5 class="white-text ">Welcome to the Internet</h5>
-            
-            <div class="row">
-                <!--First column-->
-                <div class="col s3">
-                    <a href="https://inbox.google.com" class="white-text"><div>Inbox</div></a>
-                    <a href="https://outlook.com" class="white-text"><div>Outlook</div></a>
-                    <a href="https://drive.google.com" class="white-text"><div>Google Drive</div></a>
-                    <a href="https://youtube.com" class="white-text"><div>Youtube</div></a>
-                    <a href="https://mega.nz/" class="white-text"><div>Mega</div></a>
-                </div>
-                
-                <!--Second column-->
-                <div class="col s3">
-                    <a href="https://icloud.com" class="white-text"><div>iCloud</div></a>
-                    <a href="https://github.com/" class="white-text"><div>Github</div></a>
-                    <a href="https://twitter.com" class="white-text"><div>Twitter</div></a>
-                    <a href="https://amazon.ca" class="white-text"><div>Amazon</div></a>
-                    <a href="https://gogoanime.io/" class="white-text"><div>gogoAnime</div></a>
-                </div>
 
-                <!--Third column-->
-                <div class="col s3">
-                    <a href="https://www.gog.com/" class="white-text"><div>GoG</div></a>
-                    <a href="http://store.steampowered.com/" class="white-text"><div>Steam Store</div></a>
-                    <a href="https://rule34.xxx" class="white-text"><div>Rule34</div></a>
-                    <a href="https://4chan.org" class="white-text"><div>4chan</div></a>
-                    <a href="http://hentaiverse.org/" class="white-text"><div>HentaiVerse</div></a>
-                </div> 
-            </div> 
-                
-            </div>
-        </div>
-    </div>
+				<!-- content -->
+
+
+<label onclick="buttonchange()" for="lightswitch"><img id="buttonchange" src="img/moon.png" width="50px"></label>
+<input type="checkbox" id="lightswitch"/>
+
+
+<div class="next">
+
+
+               <div class="rows">
+
+		                            <!-- top row -->
+
+<a target="blank" href="https://twitter.com" class="square">Twitter</a>
+
+<a target="blank" href="https://www.youtube.com/feed/subscriptions" class="square">Youtube</a>
+
+<a target="blank" href="https://twitch.tv/directory/following" class="square">Twitch</a>
+
+<a href="https://www.reddit.com/" class="square">Reddit</a>
+
+                                       <!-- second row -->
+<a target="blank" href="https://boards.4chan.org/r9k/" class="square">/r9k/</a>    
+
+<a target="blank" href="https://boards.4chan.org/w/" class="square">/w/</a>
+
+<a target="blank" href="http://boards.4chan.org/b/" class="square">/b/</a>
+
+<a target="blank" href="https://www.hentaihaven.org/" class="square">Hentai Haven</a>
+
+                                        <!-- third row -->
     
-    <form method="get" action="http://www.google.com/search" target="_blank">
-        <input type="text" placeholder="Google" class="search" name='q'>
-        </input>
-    </form>
-  
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+<a target="blank" href="http://crunchyroll.com/" class="square">Crunchyroll</a>
+
+<a target="blank" href="http://eeemo.net" class="square">Zalgo Text</a>
+
+<a target="blank" href="https://color.adobe.com/create/color-wheel" class="square">Color Wheel</a>
+
+<a target="blank" href="https://pixiv.net" class="square">Pixiv</a>
+
+                        </div> <!-- close rows -->
+
+
+
+<div class="image"></div>
+
+</div>	<!-- close next -->
+
+
+
+						<!-- js -->
+
+<!-- moon/sun switch -->
+<script>
+img_array= new Array('img/moon.png','img/sun.png');
+i=0;
+function buttonchange()
+{
+     i++;
+    document.getElementById("buttonchange").src=img_array[i];
+    if(i==img_array.length-1) {
+   i=-1;
+    }  
+}
+</script>
+
 </body>
 </html>
